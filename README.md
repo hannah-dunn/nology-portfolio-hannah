@@ -1,6 +1,16 @@
 # nology-portfolio-hannah
 
-### mvp temporarily here for easy grabbin!!!
+## Nology Portfolio Project
+
+Placeholder first edition of the portfolio project.
+Features a landing page/about me section, projects page and an informative page where I will list all my technical skills that would appeal to potential employers.
+
+Will add to this to be more informative and offical of course.
+<br>
+<br>
+<br>
+
+### mvp temporarily here will remove
 
 <br>
 

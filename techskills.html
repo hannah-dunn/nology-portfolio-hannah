@@ -6,29 +6,62 @@
     <link rel="stylesheet" href="./styling/style.css" />
     <script src="script.js"></script>
     <link rel="icon" type="image" href="favicon\favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Hannah Dunn</title>
   </head>
   <body>
+    <nav>
+      <div class="topNav" id="myTopNav">
+        <a href="index.html" class="active">About</a>
+        <a href="techskills.html">Tech skills</a>
+        <a href="projects.html">Projects</a>
+        <!-- <a href="#projects">Projects</a> -->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i
+        ></a>
+      </div>
+    </nav>
+    <br />
     <header>
       <h1>Hannah Dunn</h1>
-      <h2>Junior developer or something</h2>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">About</a>
-          </li>
-          <li>
-            <a href="techskills.html">Tech skills</a>
-          </li>
-          <li>
-            <a href="projects.html">Projects</a>
-          </li>
-        </ul>
-      </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="tech-detailed">
+        <div>
+          <h2>I'm proficient in...</h2>
+        </div>
+        <div class="tech bg-colour">
+          <h3 class="tech__title"></h3>
+          <p class="tech">
+            This is where a detailed description of all of my skills would go.
+          </p>
+        </div>
+      </section>
+    </main>
     <footer>
-      <p>Contact me: email, GitHub profile link, LinkedIn</p>
+      <h2>Want to contact me?</h2>
+      <br />
+      <div>
+        <a target="_blank" href="https://github.com/hannah-dunn">
+          <img class="logos" src="./github-mark.png" alt="github mark" />
+        </a>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/hannah-dunn-2141aa1b1/"
+        >
+          <img class="logos" src="./LI-In-Bug.png" alt="linkedin logo" />
+        </a>
+        <!-- <img
+            class="logos"
+            src="./584856bce0bb315b0f7675ad.png"
+            alt="email icon"
+          /> -->
+      </div>
+      <br />
+      <p>hdunn9686@gmail.com</p>
     </footer>
   </body>
 </html>

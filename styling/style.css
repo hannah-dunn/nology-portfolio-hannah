@@ -1,6 +1,8 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 
 html {
@@ -9,7 +11,8 @@ html {
 }
 
 body {
-  background-color: rgb(224, 202, 206);
+  margin: 20px;
+  background-color: rgb(248, 248, 248);
   height: 100%;
 }
 
@@ -18,33 +21,38 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-family: Arial, Helvetica, sans-serif;
+  padding: 60px;
 }
 
-.hero-image {
-  background-image: url(https://upload.wikimedia.org/wikipedia/en/3/30/Miffy%2C_by_Dick_Bruna.jpg);
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.about {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.projects-teaser {
+  padding: 20px;
 }
 
 footer {
   text-align: center;
   font-family: sans-serif;
+  padding: 50px;
 }
 
 .topNav {
-  background-color: rgb(224, 202, 206);
+  background-color: rgb(248, 248, 248);
   overflow: hidden;
 }
 
 .topNav a {
   float: left;
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -52,8 +60,8 @@ footer {
 }
 
 .topNav a:hover {
-  background-color: pink;
-  color: black;
+  background-color: rgb(227, 227, 227);
+  color: white;
 }
 
 .topNav .icon {
@@ -90,6 +98,7 @@ div.gallery {
 
 div.gallery:hover {
   border: 1px solid #777;
+  box-shadow: 0 8px 16px 0 rgb(227, 227, 227);
 }
 
 div.gallery img {
@@ -100,10 +109,6 @@ div.gallery img {
 div.desc {
   padding: 15px;
   text-align: center;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 .responsive {
@@ -127,4 +132,23 @@ div.desc {
   content: "";
   display: table;
   clear: both;
+}
+
+.logos {
+  height: auto;
+  width: 50px;
+  margin: 5px;
+}
+
+.projects-detailed {
+  font-size: 30px;
+}
+
+.projects-detailed > div > a > img {
+  height: 500px;
+  width: 500px;
+}
+
+.tech-detailed > div > h2 {
+  font-size: 45px;
 }
