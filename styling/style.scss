@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  // background-image: ;
+  background-color: rgb(224, 202, 206);
+  height: 100%;
+}
+// main {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-image {
+  background-image: url(https://upload.wikimedia.org/wikipedia/en/3/30/Miffy%2C_by_Dick_Bruna.jpg);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+footer {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.topNav {
+  background-color: rgb(224, 202, 206);
+  overflow: hidden;
+}
+
+.topNav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topNav a:hover {
+  background-color: pink;
+  color: black;
+}
+
+// .topNav a.active {
+//   background-color: rgb(244, 227, 238);
+//   color: whitesmoke;
+// }
+
+.topNav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topNav a:not(:first-child) {
+    display: none;
+  }
+  .topNav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topNav.responsive {
+    position: relative;
+  }
+  .topNav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topNav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+// nav > div {
+//   margin-bottom: 20px;
+//   border: 40px #222;
+//   cursor: pointer;
+//   background-color: rgb(71, 218, 218);
+//   overflow: hidden;
+// }
+
+// nav > ul {
+//   list-style-type: none;
+//   border: 2px solid black;
+//   height: 40px;
+//   display: flex;
+//   justify-content: space-around;
+//   align-items: center;
+//   cursor: pointer;
+// }
+
+// nav > ul > li > a {
+//   color: #222;
+//   text-decoration: none;
+//   cursor: pointer;
+// }
+
+// nav > ul > li > a:hover {
+//   color: blueviolet;
+//   text-decoration: underline;
+//   cursor: pointer;
+// }
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
